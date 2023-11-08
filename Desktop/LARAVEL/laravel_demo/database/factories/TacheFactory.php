@@ -20,7 +20,9 @@ class TacheFactory extends Factory
         return [ 
             "nom_tache"=>fake()->name(),
             "description_tache"=>fake()->text(),
-            "priorite"=>$priorite[mt_rand(0,2)]
+            "priorite"=>$priorite[mt_rand(0,2)],
+            "is_termine"=>mt_rand(0,1)
+            
         ];
     }
 }

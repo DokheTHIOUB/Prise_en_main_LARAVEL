@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('/Taches/{id}/details',[TacheController::class, 'show']);
 
 Route::get('/Taches',[TacheController::class,'getListeTaches']); 
+
+Route::get('/Taches/terminee/{id}',[TacheController::class, 'termine']);
+
+Route::get('/Taches/nouveau',[TacheController::class, 'create']);
+
+Route::post('/Taches/nouveau',[TacheController::class, 'save']);
+
