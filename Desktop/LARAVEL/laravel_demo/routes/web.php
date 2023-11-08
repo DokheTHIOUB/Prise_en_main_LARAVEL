@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/Taches/{id}/details',[TacheController::class, 'show']);
 
-Route::get('/Taches',[TacheController::class,'getListeTaches']);
+Route::get('/Taches',[TacheController::class,'getListeTaches']); 

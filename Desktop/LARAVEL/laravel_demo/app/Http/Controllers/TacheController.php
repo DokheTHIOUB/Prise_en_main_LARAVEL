@@ -10,4 +10,9 @@ class TacheController extends Controller
         $taches=Tache::all();
         return view('taches.Taches1',["taches"=>$taches]);
     }
+     
+    public function show(Request $req){
+        $tache = Tache::find($req->id);
+        return View('Tache.show', ['tachetrouvee'=>$tache ]);
+    }
 }

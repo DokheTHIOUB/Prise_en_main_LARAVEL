@@ -65,6 +65,7 @@
 <div class="container">
    
     <div class="row"> 
+        
         @foreach($taches as $t)
             <div class="col-12 col-md-4 my-1"> 
                 <div class="card">
@@ -76,10 +77,13 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                         </blockquote>
+                        <a href="/Taches/{{$t->id}}/details"  class="btn btn-primary" > DETAILS </a>
+                        <a href=""  class="btn btn-danger" > SUPPRIMER </a>
                     </div>
                 </div>
             </div>
         @endforeach 
     </div>
+
 </div>
  
